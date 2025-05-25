@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Chatgpt Prompt Timeline",
-  "description": "A Chrome Extension that adds a floating timeline to your ChatGPT conversation. Instantly jump to any user prompt by clicking on timeline items — no more endless scrolling!",
+  "description": "Instantly jump to any user prompt by clicking on timeline items.",
   "version": "0.0.1",
   "icons": {
     "16": "logo/logo-16.png",
