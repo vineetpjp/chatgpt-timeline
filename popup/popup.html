@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="popup.css">
-    <title>Chrome Addon v3: popup</title>
-</head>
-<body>
-    This is the <span class="special-text">HTML</span> body of the addon.
-</body>
+<html>
+  <head>
+    <title>Timeline Settings</title>
+    <style>
+      :root {
+        --primary: #4f46e5;
+        --text: #111827;
+        --subtle: #6b7280;
+        --bg: #f9fafb;
+      }
+
+      body {
+        margin: 0;
+        padding: 16px;
+        width: 240px;
+        font-family: "Segoe UI", Roboto, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+      }
+
+      h4 {
+        margin: 0 0 12px 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--primary);
+        border-bottom: 1px solid #e5e7eb;
+        padding-bottom: 6px;
+      }
+
+      .setting {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        margin-top: 12px;
+      }
+
+      .setting input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        accent-color: var(--primary);
+        cursor: pointer;
+      }
+
+      .note {
+        font-size: 12px;
+        color: var(--subtle);
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Chatgpt Timeline Settings</h4>
+
+    <label class="setting">
+      <input type="checkbox" id="autoCloseToggle" />
+      <span>Hide timeline after jump</span>
+    </label>
+
+    <div class="note">
+      When enabled, the timeline panel will close automatically after clicking a
+      message.
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
 </html>
