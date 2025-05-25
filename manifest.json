@@ -14,12 +14,12 @@
     "default_popup": "popup/popup.html"
   },
   "permissions": ["storage"],
-  "host_permissions": ["*://*/*"],
+  "host_permissions": ["https://chatgpt.com/*"],
   "content_scripts": [
     {
       "js": ["main.js"],
       "css": ["timeline.css"],
-      "matches": ["https://chatgpt.com/c/*"]
+      "matches": ["https://chatgpt.com/*"]
     }
   ]
 }
