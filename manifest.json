@@ -1,8 +1,7 @@
 {
-  // Comments are accepted in the manifest, even though it is JSON.
   "manifest_version": 3,
-  "name": "Chrome Extension v3 Starter",
-  "description": "A minimal example of a chrome extension using manifest v3",
+  "name": "Chatgpt Prompt Timeline",
+  "description": "A Chrome Extension that adds a floating timeline to your ChatGPT conversation. Instantly jump to any user prompt by clicking on timeline items — no more endless scrolling!",
   "version": "0.0.1",
   "icons": {
     "16": "logo/logo-16.png",
@@ -16,9 +15,6 @@
   },
   "permissions": ["storage"],
   "host_permissions": ["*://*/*"],
-  // "background": {
-  //   "service_worker": "service-worker.js"
-  // },
   "content_scripts": [
     {
       "js": ["main.js"],
